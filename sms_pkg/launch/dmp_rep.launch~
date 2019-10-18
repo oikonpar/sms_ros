@@ -1,0 +1,12 @@
+<launch>
+ 
+   <rosparam file="$(find dmp_rep)/yaml/dmp_rep.yaml" command="load" /> 
+
+
+   <param name="trajectory_file_path" value="$(find dmp_rep)/DMPleftslow.csv" />
+
+
+   <node name="dmp_rep_node" pkg="dmp_rep" type="dmp_rep_node" output="screen"></node>
+
+
+</launch>

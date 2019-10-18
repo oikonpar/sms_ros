@@ -1,0 +1,18 @@
+<launch>
+ 
+   <rosparam file="$(find sms_pkg)/yaml/sms_parameters.yaml" command="load" /> 
+   
+   <!--param name="index_of_USB_port" value="0"/-->
+   <!--param name="motor_id_bias" value="4"/-->
+   <!--param name="number_of_motors_attached" value="3"/-->
+   
+   <node name="sms_456" pkg="sms_pkg" type="sms_node.py" output="screen">
+   		<param name="index_of_USB_port" value="0"/>
+   </node>
+   
+   <!--node name="sms_789" pkg="sms_pkg" type="sms_node.py" output="screen">
+   		<param name="index_of_USB_port" value="1"/>
+   </node-->
+
+
+</launch>
