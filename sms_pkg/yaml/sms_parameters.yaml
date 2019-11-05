@@ -1,2 +1,3 @@
 motor_id_bias: 4
-number_of_motors_attached: 3
+number_of_motors_attached: 6
+motors_in_block: 3

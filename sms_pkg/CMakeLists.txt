@@ -5,8 +5,8 @@ project(sms_pkg)
 find_package(catkin REQUIRED COMPONENTS roscpp rospy std_msgs message_generation genmsg)
 
 ## Declare ROS messages and services
-add_message_files(FILES relpos_control.msg pos_control.msg vel_control.msg)
-add_service_files(FILES abspos_encoder.srv cur_encoder.srv pos_encoder.srv vel_encoder.srv)
+add_message_files(FILES control_all.msg control_with_id.msg)
+add_service_files(FILES encoder_abspos.srv encoder_cur.srv encoder_pos.srv encoder_vel.srv)
 
 ## Generate added messages and services
 generate_messages(DEPENDENCIES std_msgs)

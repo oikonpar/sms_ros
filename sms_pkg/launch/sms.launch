@@ -6,11 +6,13 @@
    <!--param name="motor_id_bias" value="4"/-->
    <!--param name="number_of_motors_attached" value="3"/-->
    
-   <node name="sms_456" pkg="sms_pkg" type="sms_node.py" output="screen">
+   <node name="sms_456789" pkg="sms_pkg" type="sms_node.py" output="screen">
    		<param name="index_of_USB_port" value="0"/>
    </node>
    
-   <!--node name="sms_789" pkg="sms_pkg" type="sms_node.py" output="screen">
+   <node name="throttler" type="throttle" pkg="topic_tools" args="messages /control_all_vel 20 /control_all_vel_throttled" />
+   
+   <!--node name="sms__" pkg="sms_pkg" type="sms_node.py" output="screen">
    		<param name="index_of_USB_port" value="1"/>
    </node-->
 
